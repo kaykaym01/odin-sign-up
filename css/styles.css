@@ -9,6 +9,7 @@
     background-image: url("../img/sunset_img.avif");
     background-position: center;
     background-size: cover;
+    flex: 1 1 0;
 }
 
 main {
@@ -17,6 +18,7 @@ main {
     align-items: flex-start;
     padding-top: 100px;
     padding-left: 40px;
+    flex: 2 1 0;
 }
 
 .new-account-form {
