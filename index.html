@@ -18,25 +18,43 @@
         <main>
             <p class="main-text">This is not a real online service! You know you need something like this in your life
                 to help you realize your deepest dreams. Sign up <em>now</em> to get started.
-            <br>
-            You <em>know</em> you want to.
-        </p>
+                <br>
+                <br>
+                You <em>know</em> you want to.
+            </p>
             <form class="new-account-form">
                 <p>Let's do this!</p>
-                <label for="first-name">First Name</label>
-                <input id="first-name" name="first-name" type="text">
 
-                <label for="last-name">Last Name</label>
-                <input id="last-name" name="last-name" type="text">
-
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email">
-
-                <label for="password">Password</label>
-                <input id="password" name="password" type="password">
-
-                <label for="password-confirm">Confirm Password</label>
-                <input id="password-confirm" name="password-confirm" type="password">
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="first-name" class="input-label">First Name</label>
+                        <input id="first-name" name="first-name" type="text">
+                    </div>
+                    <div class="form-element">
+                        <label for="last-name" class="input-label">Last Name</label>
+                        <input id="last-name" name="last-name" type="text">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="email" class="input-label">Email</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="form-element">
+                        <label for="phone-number" class="input-label">Phone Number</label>
+                        <input id="phone-number" name="phone-number" type="phone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="password" class="input-label">Password</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <div class="form-element">
+                        <label for="password-confirm" class="input-label">Confirm Password</label>
+                        <input id="password-confirm" name="password-confirm" type="password">
+                    </div>
+                </div>
             </form>
             <button class="new-acct-btn">Create Account</button>
             <p class="has-acct-msg">Already have an account? <a href="#">Log in</a></p>
