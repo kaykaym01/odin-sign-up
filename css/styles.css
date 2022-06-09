@@ -19,21 +19,25 @@ main {
     flex-direction: column;
     align-items: flex-start;
     padding-top: 100px;
-    padding-left: 40px;
     flex: 2 1 0;
     background-color: rgb(249, 248, 248);
 }
 
+main > * {
+    width: 60%;
+    padding-left: 30px;
+}
+
 .main-text {
     font-size: 1.2em;
-    width: 60%;
 }
 
 .new-account-form {
     width: 100%;
-    box-shadow: 0 4px 5px -2px gray;
+    box-shadow: 0 2px 8px -2px gray;
     margin-bottom: 30px;
     background-color: #FFF;
+    padding-bottom: 15px;
 }
 
 .form-row {
