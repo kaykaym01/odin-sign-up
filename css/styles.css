@@ -25,10 +25,11 @@ main {
 
 .main-text {
     font-size: 1.2em;
+    width: 60%;
 }
 
 .new-account-form {
-    width: 70%;
+    width: 60%;
 }
 
 .form-row {
