@@ -23,6 +23,10 @@ main {
     flex: 2 1 0;
 }
 
+.main-text {
+    font-size: 1.2em;
+}
+
 .new-account-form {
     width: 70%;
 }
@@ -42,8 +46,8 @@ main {
 
 .input-label {
     text-transform: uppercase;
-    font-size: 0.75em;
-    letter-spacing: 0.25em;
+    font-size: 0.65em;
+    letter-spacing: 0.2em;
     width: 200px;
     text-align: left;
 }
