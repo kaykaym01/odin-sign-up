@@ -20,6 +20,10 @@ body {
     font-weight: 500;
 }
 
+.logo {
+    color: white;
+}
+
 /***********
 Layout
 ************/
@@ -42,7 +46,27 @@ Layout
     background-position: center;
     background-size: cover;
     flex: 1 1 0;
+    text-align: center;
 }
+
+.logo {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.logo-img {
+    height: 10vh;
+}
+
+.photo-credit,
+.photo-credit * {
+    color: black;
+}
+
+
 
 main {
     display: flex;
@@ -51,6 +75,18 @@ main {
 }
 
 @media (min-width: 675px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .photo-credit,
+    .photo-credit * {
+        color: grey;
+    }
+
     main {
         text-align: left;
         padding-top: 20px;
@@ -58,7 +94,8 @@ main {
         background-color: rgb(249, 248, 248);
     }
 
-    .main-text, .has-acct-msg {
+    .main-text,
+    .has-acct-msg {
         width: 60%;
         margin-left: 30px;
     }
@@ -73,7 +110,7 @@ main {
 }
 
 .new-account-form {
-    background-color: #FFF;  
+    background-color: #FFF;
 }
 
 .form-inputs {
@@ -109,7 +146,7 @@ input {
         justify-content: flex-start;
     }
 
-    .form-inputs{
+    .form-inputs {
         padding-left: 30px;
     }
 
@@ -129,7 +166,7 @@ input {
         width: 200px;
     }
 
-    .new-acct-btn{
+    .new-acct-btn {
         margin-left: 30px;
     }
 
