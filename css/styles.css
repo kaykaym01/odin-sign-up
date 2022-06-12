@@ -26,8 +26,15 @@ Layout
 .container {
     display: flex;
     justify-content: flex-start;
-    width: 100vw;
-    height: 100vh;
+    flex-direction: column;
+}
+
+@media (min-width: 675px) {
+    .container {
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+    }
 }
 
 .sidebar {
@@ -37,50 +44,77 @@ Layout
     flex: 1 1 0;
 }
 
-main {
+main{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-top: 100px;
-    flex: 2 1 0;
-    background-color: rgb(249, 248, 248);
+    text-align: center;
 }
 
-main>* {
-    width: 60%;
-    padding-left: 30px;
+@media (min-width: 675px) {
+    main {
+        text-align: left;
+        padding-top: 20px;
+        flex: 2 1 0;
+        background-color: rgb(249, 248, 248);
+    }
+
+    main>* {
+        width: 60%;
+        padding-left: 30px;
+    }
 }
 
-.new-account-form {
+.new-account-form{
     width: 100%;
     box-shadow: 0 2px 8px -2px gray;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     background-color: #FFF;
     padding-bottom: 15px;
-}
-
-.form-row {
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 100px;
-}
-
-.form-element {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.form-row{
+    width: 65%;
+}
+
+.form-element{
+    display: flex;
+    flex-direction: column;
     padding: 10px 0;
 }
 
-.input-label {
+.input-label{
     text-transform: uppercase;
-    font-size: 0.65em;
-    letter-spacing: 0.2em;
-    width: 200px;
-    text-align: left;
+    font-size: 0.8em;
 }
 
-input {
-    width: 200px;
+input{
     box-sizing: border-box;
 }
+
+@media (min-width: 675px) {
+    .new-account-form {
+        max-width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .form-row{
+        display: flex;
+        column-gap: 2rem;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .input-label {
+        width: 200px;
+        text-align: left;
+    }
+    
+    input {
+        width: 200px;
+    }
+}
+
