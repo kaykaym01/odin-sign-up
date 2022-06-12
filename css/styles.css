@@ -1,10 +1,24 @@
+/***********
+Typography
+************/
+
+.main-text {
+    font-size: 1.2em;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+/***********
+Layout
+************/
 .container {
     display: flex;
     justify-content: flex-start;
     width: 100vw;
     height: 100vh;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: 500;
 }
 
 .sidebar {
@@ -23,13 +37,9 @@ main {
     background-color: rgb(249, 248, 248);
 }
 
-main > * {
+main>* {
     width: 60%;
     padding-left: 30px;
-}
-
-.main-text {
-    font-size: 1.2em;
 }
 
 .new-account-form {
